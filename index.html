@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="w-full h-screen flex justify-center items-center bg-yellow-400">
+        <div class=" bg-yellow-500 w-1/2 flex flex-col justify-center items-center p-8 rounded-xl shadow-xl">
+            <div class="flex gap-2 mb-8">
+                <input id="cityName" class="text-xl py-2 px-4 rounded-xl shadow-xl" type="text" placeholder="City Name">
+                <button id="search" class="text-xl py-2 px-4 rounded-xl shadow-xl" type="submit">Search</button>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center">
+                <h2 class="text-5xl mb-5">Chandigarh</h2>
+                <img class="mb-5 w-[200px]" src="./weather icons/weather.png" alt="">
+                <p class="text-6xl mb-5">16</p> 
+                <div class="flex gap-2 mb-5 text-lg">
+                    <p><strong>windspeed :</strong> 25 kmph</p>
+                    <p><strong>Humidity : </strong> 30</p>
+                </div> 
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
