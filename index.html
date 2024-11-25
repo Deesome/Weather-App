@@ -8,19 +8,23 @@
 </head>
 <body>
     <div class="w-full h-screen flex justify-center items-center bg-yellow-400">
+
         <div class=" bg-yellow-500 w-1/2 flex flex-col justify-center items-center p-8 rounded-xl shadow-xl">
+            <h1 class="text-5xl mb-8 font-black">WEATHER APP</h1>
             <div class="flex gap-2 mb-8">
-                <input id="cityName" class="text-xl py-2 px-4 rounded-xl shadow-xl" type="text" placeholder="City Name">
-                <button id="search" class="text-xl py-2 px-4 rounded-xl shadow-xl" type="submit">Search</button>
+                <input id="cityName" class="text-xl py-2 px-4 rounded-xl shadow-xl" type="text" placeholder="City Name" autocomplete="off">
+                <button id="search" class="text-xl py-2 px-4 border-2 border-solid border-black rounded-xl shadow-xl hover:text-yellow-400 hover:bg-black transition-all 0.3s" type="submit">Search</button>
             </div>
 
             <div id="weather-card" class="hidden flex-col justify-center items-center text-center">
                 <h2 id="city" class="text-5xl mb-5"></h2>
-                <img class="mb-5 w-[200px]" src="./weather icons/weather.png" alt="">
+                <img id="weather-icon" class="mb-5 w-[200px] object-cover object-center" src="" alt="">
                 <p id="temp" class="text-6xl mb-5"></p> 
+                <p id="description" class="text-lg mb-5"></p>
+
                 <div class="flex gap-2 mb-5 text-lg">
-                    <p><strong>windspeed :</strong> 25 kmph</p>
-                    <p><strong>Humidity : </strong> 30</p>
+                    <p><strong>windspeed : </strong><span id="speed"></span> </p>
+                    <p><strong>Humidity : </strong> <span id="humidity"></span></p>
                 </div> 
             </div>
 
